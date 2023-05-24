@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <main>
+            <h1>Formulário</h1>
+            <hr>
+            
+            <h2>Tipos de Input</h2>
+            <br>
+
+            <form>
+                <div>
+                    <label for="nome">Digite o nome: </label>
+                    <input type="text" id="nome" name="nome">
+                    <!-- value="Luís Cláudio" | placeholder="Informe o seu nome..." | 
+                        | name="nome" | = atributo para identificar o tipo e o preenchimento do Input.
+                        Importante para o JavaScript reconhecer o tipo do Input -->
+                </div>
+                <br>
+
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+                <br>
+
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" placeholder="alguem@email.com.br">
+                </div>
+                <br>
+
+                <div>
+                    <label for="data">Data de nascimento: </label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <br>
+
+                <div>
+                    <label for="hora">Horário: </label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+                <br>
+
+                <div>
+                    <label for="numero">Número: </label>
+                    <input type="number" id="numero" name="numero" placeholder="Número">
+                </div>
+                <br>
+
+                <div>
+                    <label for="arquivo">Arquivo: </label>
+                    <input type="file" id="arquivo" name="arquivo">
+                </div>
+                <br>
+
+                <div>
+                    <label for="url">Url: </label>
+                    <input type="url" id="url" name="url" placeholder="Digite o endereço do site...">
+                </div>
+                <br>
+                
+                <div>
+                    <label for="cor">Cor: </label>
+                    <input type="color" id="cor" name="cor">
+                </div>
+                <br>
+                
+                <div>
+                    <label for="progresso">Progresso: </label>
+                    <input type="range" id="progresso" name="progresso" value="100" max="200" min="100">
+                </div>
+                <br>
+
+                <div>
+                    <label for="selecao-quadrado">Selecione: </label>
+                    <input type="checkbox" id="selecao-quadrado" name="selecao-quadrado"> <!-- checked="checked" -->
+                    <!-- permite marcar mais de uma opção -->
+                </div>
+                <br>
+
+                <div>
+                    <label for="selecao-redondo">Selecione: </label>
+                    <input type="radio" id="selecao-redondo" name="selecao-redondo">
+                    <!-- só permite marcar uma opção -->
+                </div>
+                <br>
+
+                <div>
+                    <label for="limpar">Limpar: </label>
+                    <input type="reset" id="limpar" name="limpar">
+                </div>
+                <br>
+
+                <div>
+                    <label for="enviar"></label>
+                    <input type="submit" id="enviar" name="enviar">
+                    <!-- cria um botão "enviar". Não precisa de label -->
+                </div>
+                <br>
+
+            </form>
+        </main>
+    </body>
+</html>
