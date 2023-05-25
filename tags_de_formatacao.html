@@ -59,12 +59,17 @@
         <p><strong>A tag "u" deixa a palavra ou texto sublinhado, porém por
                 questões de boas práticas e semântica, essa tag caiu em desuso a
                 partir da versão 5 do HTML, sendo o correto utilizar uma tag
-                "span" e <i>estilizar</i> no CSS, com estilo <i>text-decoration</i>,
-                opção <i>underline</i>.</strong></p>
+                "span" com o atributo "class=<i>underline</i>" e <i>estilizar</i>
+                no CSS, com estilo <i>text-decoration</i>,
+                opção <i>underline</i>. Importante: tag DIV é única para cada
+                elemento, não pode ser redefino.
+                A tag CLASS pode ser utilizada para vários elementos com a mesma
+                classe</strong></p>
 
         <p>Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Neque
             temporibus, at non quae repudiandae aliquam sequi libero, dolorum
-            aperiam laboriosam deserunt rerum qui totam eligendi, <u>molestiae</u>
+            aperiam laboriosam <span class="underline">deserunt</span> rerum qui
+            totam eligendi, <span class="underline">molestiae</span>
             reiciendis a in <i>dignissimos.</i></p>
         <br>
 
@@ -99,9 +104,9 @@
         <p>A tag "pre" deixa um bloco pré-formatado, como se fosse um código.</p>
 
         <pre>
-        nome = claudio
-        print(hello, World!)
-    </pre>
+            nome = claudio
+            print(hello, World!)
+        </pre>
         <br>
 
         <!-- tag código=code "<code></code>"  -->
@@ -111,9 +116,9 @@
         <p>A tag "code" destaca uma linha de código dentro de um texto.</p>
 
         <pre>
-        nome = claudio
-        print(hello, World!)
-    </pre>
+            nome = claudio
+            print(hello, World!)
+        </pre>
 
         <p>Como você pode ver na linha acima, a variável <code>nome</code> é do
             tipo <code>string</code>.</p>
@@ -123,7 +128,8 @@
         <h2>Tag citação=blockquote</h2>
 
         <h3>Tag "citação=blockquote"</h3>
-        <p>A tag "citação=blockquote" destaca uma linha ou texto em forma de citação.</p>
+        <p>A tag "citação=blockquote" destaca uma linha ou texto em forma de
+            citação.</p>
 
         <blockquote>
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore doloremque quis corporis vel cum modi enim amet. Modi recusandae quisquam optio nemo provident explicabo? Numquam alias quod repellendus! Libero."
