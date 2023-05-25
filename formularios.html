@@ -10,7 +10,7 @@
         <main>
             <h1>Formulário</h1>
             <hr>
-            
+
             <h2>Tipos de Input</h2>
             <br>
 
@@ -32,7 +32,8 @@
 
                 <div>
                     <label for="email">E-mail: </label>
-                    <input type="email" id="email" name="email" placeholder="alguem@email.com.br">
+                    <input type="email" id="email" name="email"
+                        placeholder="alguem@email.com.br">
                 </div>
                 <br>
 
@@ -50,7 +51,8 @@
 
                 <div>
                     <label for="numero">Número: </label>
-                    <input type="number" id="numero" name="numero" placeholder="Número">
+                    <input type="number" id="numero" name="numero"
+                        placeholder="Número">
                 </div>
                 <br>
 
@@ -62,32 +64,36 @@
 
                 <div>
                     <label for="url">Url: </label>
-                    <input type="url" id="url" name="url" placeholder="Digite o endereço do site...">
+                    <input type="url" id="url" name="url"
+                        placeholder="Digite o endereço do site...">
                 </div>
                 <br>
-                
+
                 <div>
                     <label for="cor">Cor: </label>
                     <input type="color" id="cor" name="cor">
                 </div>
                 <br>
-                
+
                 <div>
                     <label for="progresso">Progresso: </label>
-                    <input type="range" id="progresso" name="progresso" value="100" max="200" min="100">
+                    <input type="range" id="progresso" name="progresso"
+                        value="100" max="200" min="100">
                 </div>
                 <br>
 
                 <div>
                     <label for="selecao-quadrado">Selecione: </label>
-                    <input type="checkbox" id="selecao-quadrado" name="selecao-quadrado"> <!-- checked="checked" -->
+                    <input type="checkbox" id="selecao-quadrado"
+                        name="selecao-quadrado"> <!-- checked="checked" -->
                     <!-- permite marcar mais de uma opção -->
                 </div>
                 <br>
 
                 <div>
                     <label for="selecao-redondo">Selecione: </label>
-                    <input type="radio" id="selecao-redondo" name="selecao-redondo">
+                    <input type="radio" id="selecao-redondo"
+                        name="selecao-redondo">
                     <!-- só permite marcar uma opção -->
                 </div>
                 <br>
@@ -98,13 +104,28 @@
                 </div>
                 <br>
 
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                <!-- caixa de texto onde são digitadas as informações referentes ao formulário -->
+                <br>
+
+                <div>
+                    <select name="select" id="select">
+                        <option value disabled selected>Selecione uma das
+                            opções... </option>
+                        <option value="receita">Receita</option>
+                        <option value="despesa">Despesa</option>
+                        <option value="transferencia">Tranferência</option>
+                        <!-- value é o que será enviado quando eu 'submeter' o formulário, o texto é apenas para exibição -->
+                    </select>
+                </div>
+                <br>
+
                 <div>
                     <label for="enviar"></label>
                     <input type="submit" id="enviar" name="enviar">
                     <!-- cria um botão "enviar". Não precisa de label -->
                 </div>
                 <br>
-
             </form>
         </main>
     </body>
